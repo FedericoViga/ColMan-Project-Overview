@@ -7,7 +7,7 @@
 
 È una **PWA** (Progressive Web App) per smartphone che uso regolarmente per gestire la mia collezione di videogiochi.<br>
 
-Nell’ultima versione ho implementato **un’architettura multi-tenant** a livello di database e applicazione, migliorando scalabilità e gestione.<br>
+Nell’ultima versione ho implementato **un’architettura multi-user** a livello di database e applicazione, migliorando scalabilità e gestione.<br>
 
 Si possono inserire/modificare/eliminare giochi e piattaforme direttamente nel database di Supabase (PostgreSQL), scattando la foto sul momento,selezionandola dalla galleria del telefono oppure su risorse esterne con link dinamici basati sui dati utente e compilando una vera e propria "scheda gioco" con le informazioni del gioco.<br>
 
@@ -39,7 +39,6 @@ L'applicazione è diventata una PWA!
 
 - Pagina della wishlist raggiungibile con link in homepage
 - Funzione di ricerca giochi in wishlist
-- Floating button che apre una modal con form per aggiungere giochi alla wishlist
 - Wishlist per utente autenticato con componenti accordion generati dinamicamente per ogni piattaforma e relativi giochi
 - Interruttore per espandere tutti gli accordion delle piattaforme che contengono la lista giochi
 - Button di eliminazione istantanea con optimistic update per ogni gioco nella lista
@@ -49,32 +48,32 @@ L'applicazione è diventata una PWA!
 
 #### Esplorazione e gestione collezione
 
-- Ricerca avanzata con filtro per piattaforma e aggiornamento in tempo reale dei risultati
-- Liste paginate di giochi e collector’s editions per utente autenticato
-- Hero section con statistiche dinamiche sulla collezione
+- Ricerca avanzata con filtri e aggiornamento in tempo reale dei risultati
+- Pagina giochi con filtri e paginazione per utente autenticato
+- Pagina statistiche della collezione
 
 #### Gestione contenuti e metadati
 
 - Creazione, modifica ed eliminazione di giochi e piattaforme con flussi guidati
 - Supporto nativo a giochi sigillati, edizioni speciali e collector’s editions
-- Supporto nativo per giochi completi e non completi con badge-pill nelle card di anteprima e nella pagina del gioco
+- Supporto nativo per giochi completi e non completi con badge nelle card di anteprima e nella pagina del gioco
 - Generazione automatica della lista dei contenuti a partire dal testo inserito
 - Inserimento intelligente di testi di default e validazione in tempo reale degli input
-- Immagini giochi di utenti autenticati in bucket privato con url firmati
+- Immagini giochi di utenti autenticati in storage privato con url firmati
 
 #### Pagina gioco avanzata
 
 - Vista dedicata con badge visivi per tipologia di edizione
 - Toggle tra contenuti originali e lista generata automaticamente
-- Button di copia rapida della lista contenuti con feedback animato
+- Button di copia rapida della lista contenuti preformattata e con feedback animato
 - Visualizzazione dinamica della regione tramite icone
 
 #### Integrazioni esterne
 
-- Link link dinamici a Google ed eBay basati su titolo e piattaforma
+- Link dinamici a Google ed eBay basati su titolo e piattaforma
 - Verifica della completezza del gioco su supporto fisico tramite link dinamici a DoesItPlay
 - Controllo durata gioco con link contestuale ad HowLongToBeat
-- Link dinamici basati sui dati utente ai principali e-commerce di nuovo e usato per cercare i giochi in wishlist
+- Link dinamici ai principali e-commerce di nuovo e usato per cercare i giochi in wishlist
 
 #### Esperienza utente e feedback
 
