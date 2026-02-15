@@ -13,7 +13,7 @@ Si possono inserire/modificare/eliminare giochi e piattaforme direttamente nel d
 
 C'è anche una **Wishlist** completa con funzioni di aggiunta e optimistic delete dei giochi, funzione di ricerca e link dinamici ai principali e-commerce di nuovo e usato per cercare i giochi in wishlist.<br>
 
-**Privacy e sicurezza**: l'intera app è accessibile solo da utenti autorizzati e autenticati con Google OAuth (in futuro aggiungerò anche login via email/password), tutte le immagini degli utenti autenticati hanno url firmati e tutte le operazioni CRUD protette dalle rls policies di Supabase solo per gli utenti autenticati.<br>
+**Privacy e sicurezza**: l'intera app è accessibile solo da utenti autorizzati e autenticati con Google OAuth (in futuro aggiungerò anche login via email/password) e tutte le operazioni CRUD sono protette dalle rls policies di Supabase solo per gli utenti autenticati.<br>
 
 E molto altro...(vedi features sotto)
 
@@ -59,7 +59,6 @@ L'applicazione è diventata una PWA!
 - Supporto nativo per giochi completi e non completi con badge nelle card di anteprima e nella pagina del gioco
 - Generazione automatica della lista dei contenuti a partire dal testo inserito
 - Inserimento intelligente di testi di default e validazione in tempo reale degli input
-- Immagini giochi di utenti autenticati in storage privato con url firmati
 
 #### Pagina gioco avanzata
 
